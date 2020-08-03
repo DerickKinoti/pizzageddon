@@ -1,5 +1,11 @@
 body{
+  background-image: url(../images/flaming.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: yellow;
+}
+p{
+  color: blue;
 }
 
 .glow {
