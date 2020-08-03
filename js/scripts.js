@@ -212,9 +212,9 @@ var getDelivery = function() {
     }
   } else {
     var address = {
-      name: "name N/A",
-      location: "location N/A",
-      houseno: "houseno N/A",
+      name: " ",
+      location: " ",
+      houseno: " ",
       cost: 0
     }
   }
@@ -261,13 +261,13 @@ $(document).ready(function() {
       "<li>" + toppingName + ": " + toppingPrice + "</li>" +
       "<li>" + sauceName + ": " + saucePrice + "</li>" +
       "<li>Delivery: " + deliveryPrice + "</li>" +
-      "<li>Delivery Address => " + getDelivery().name + ", " + getDelivery().location + ", " + getDelivery().houseno + "</li>" +
+      "<li>Delivery Address -> " + getDelivery().name + ", " + getDelivery().location + ", " + getDelivery().houseno + "</li>" +
       "<h3> Cost:" + totalCost + "</h3>";
 
     alert("Your delivery price is " + deliveryPrice);
+    alert("Your order will be delivered to your location");
     $(".items").html(orderDetails);
     console.log(totalCost);
-
   });
 
 
