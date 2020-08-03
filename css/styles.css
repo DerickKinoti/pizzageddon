@@ -3,13 +3,25 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-color: yellow;
+  color: black;
 }
 p{
   color: blue;
 }
+#cardcont {
+    background: rgba(255, 255, 255, 0.432);
+    padding: 6px;
+}
+.set {
+    display: none;
+    flex-direction: column;
+}
+.set.active {
+    display: flex;
+}
 
 .glow {
-  font-size: 70px;
+  font-size: 20px;
   color: #ffffff;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
